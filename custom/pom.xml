@@ -35,6 +35,9 @@
 				<artifactId>maven-war-plugin</artifactId>
 				<version>2.1.1</version>
 				<configuration>
+				
+				<failOnMissingWebXml>false</failOnMissingWebXml>
+			
 					<archive>
 						<manifestEntries>
 							<version>${project.version}</version>
@@ -113,12 +116,6 @@
 		</profile>
 	</profiles>
 
-	<distributionManagement>
-		<repository>
-			<id>artifactory</id>
-			<name>Calculator_CI_Builds</name>
-			<url>http://localhost:8081/artifactory/Calculator_CI_Builds</url>
-		</repository>
-	</distributionManagement>
+	
 	
 </project>
